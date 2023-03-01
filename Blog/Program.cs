@@ -7,4 +7,3 @@ builder.Services.AddDbContext<BlogDataContext>();
 var app = builder.Build();
 app.MapControllers();
 app.Run();
-67y6
