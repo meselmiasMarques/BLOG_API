@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "//lS3bMKheTgB3H201y+mnBuJ5/GFwod9lBzVtRx6TTKa6B3kROKrCtWamS6YCaOlpJ8QlfSDJ7vdLjCsVdiAw==",
+  "dgSpecHash": "HpMvI3omNCQ=",
   "success": true,
-  "projectFilePath": "C:\\Users\\mlima\\Desktop\\DEV\\BLOG_API\\Blog\\Blog.csproj",
+  "projectFilePath": "C:\\DEV\\BLOG_API\\Blog\\Blog.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mlima\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\mlima\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
