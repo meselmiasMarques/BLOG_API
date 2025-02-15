@@ -272,7 +272,3 @@ C:\DEV\BLOG_API\Blog\obj\Debug\net8.0\refint\Blog.dll
 C:\DEV\BLOG_API\Blog\obj\Debug\net8.0\Blog.pdb
 C:\DEV\BLOG_API\Blog\obj\Debug\net8.0\Blog.genruntimeconfig.cache
 C:\DEV\BLOG_API\Blog\obj\Debug\net8.0\ref\Blog.dll
-C:\DEV\BLOG_API\Blog\bin\Debug\net8.0\Blog.staticwebassets.endpoints.json
-C:\DEV\BLOG_API\Blog\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-C:\DEV\BLOG_API\Blog\obj\Debug\net8.0\staticwebassets\msbuild.Blog.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
-C:\DEV\BLOG_API\Blog\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

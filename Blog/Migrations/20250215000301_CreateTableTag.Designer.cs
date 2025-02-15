@@ -4,6 +4,7 @@ using Blog.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Blog.Migrations
 {
     [DbContext(typeof(BlogDataContext))]
-    partial class BlogDataContextModelSnapshot : ModelSnapshot
+    [Migration("20250215000301_CreateTableTag")]
+    partial class CreateTableTag
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -210,21 +213,6 @@ namespace Blog.Migrations
                     b.ToTable("PostTag");
                 });
 
-            modelBuilder.Entity("TagPost", b =>
-                {
-                    b.Property<int>("PostId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("TagId")
-                        .HasColumnType("int");
-
-                    b.HasKey("PostId", "TagId");
-
-                    b.HasIndex("TagId");
-
-                    b.ToTable("TagPost");
-                });
-
             modelBuilder.Entity("UserRole", b =>
                 {
                     b.Property<int>("RoleId")
@@ -276,23 +264,6 @@ namespace Blog.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired()
                         .HasConstraintName("FK_PostTag_TagId");
-                });
-
-            modelBuilder.Entity("TagPost", b =>
-                {
-                    b.HasOne("Blog.Models.Post", null)
-                        .WithMany()
-                        .HasForeignKey("PostId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired()
-                        .HasConstraintName("FK_TagPost_PostId");
-
-                    b.HasOne("Blog.Models.Tag", null)
-                        .WithMany()
-                        .HasForeignKey("TagId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired()
-                        .HasConstraintName("FK_TagPost_TagId");
                 });
 
             modelBuilder.Entity("UserRole", b =>

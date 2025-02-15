@@ -1,12 +1,11 @@
 {
   "Version": 1,
-  "Hash": "82izxPZ3xfK7xRjbVsE9vVfk7pZZIsivDeutO8kvheo=",
+  "Hash": "iHKkzylLStCdz/H62Ga7eUDHbY68jqQS/peP5vtmhCs=",
   "Source": "Blog",
   "BasePath": "_content/Blog",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
+  "Assets": []
 }
